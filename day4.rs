@@ -1,7 +1,5 @@
 fn main() {
     
-    let start = std::time::Instant::now();
-    
     let input: Vec<String>  = 
     include_str!("input.txt")
     .lines()
@@ -53,6 +51,5 @@ fn main() {
         i+=1;
     }
     let part2: i32 = arr.iter().sum();
-    println!("Points: {}\nScratch Cards: {}\nTime taken: {} us",
-    part1,part2,start.elapsed().as_micros());
+    println!("Points: {}\nScratch Cards: {}",part1,part2);
 }
