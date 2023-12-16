@@ -56,6 +56,6 @@ fn main() {
             }
         }
     }
-    println!("Sum of parts: {}\nSum of gear ratios: {}\nTime taken: {} us",
-    parts,gear_ratios,start.elapsed().as_micros());
+    println!("Sum of parts: {}\nSum of gear ratios: {}\nTime taken: {:?}",
+    parts,gear_ratios,start.elapsed());
 }
