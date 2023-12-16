@@ -46,12 +46,9 @@ fn main() {
         }
     }
 
-    let is_gear = |i:usize, j: usize|
-    grid[i][j]=='*' && numbers[i][j].len()==2;
-
     for i in 0..x {
         for j in 0..y {
-            if is_gear(i,j) {
+            if grid[i][j]=='*' && numbers[i][j].len()==2 {
                 gear_ratios += numbers[i][j][0] * numbers[i][j][1];
             }
         }
