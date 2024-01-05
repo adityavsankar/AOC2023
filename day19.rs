@@ -156,7 +156,13 @@ fn part2(workflows: &Workflows) -> usize {
     }).sum()
 }
 
-pub fn solve(input: &str) -> (usize,usize) {
+fn solve(input: &str) -> (usize,usize) {
     let (workflows,parts) = parse(input);
     (part1(&workflows,&parts),part2(&workflows))
+}
+
+fn main() {
+    let input = include_str!("input.txt");
+    let (part1,part2) = solve(input);
+    println!("Part 1: {}\nPart 2: {}",part1,part2);
 }
